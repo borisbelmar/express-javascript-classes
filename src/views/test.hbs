@@ -1,0 +1,22 @@
+<h1>Este es un test</h1>
+
+<form action="/test" method="POST">
+  <input
+    name="discount"
+    type="number"
+    required="true"
+    placeholder="Descuento"
+    value="{{discount}}"
+  >
+  <input
+    name="normalPrice"
+    type="number"
+    required="true"
+    placeholder="Precio normal"
+    value="{{normalPrice}}"
+  >
+  <button type="submit">Calcular precio final</button>
+</form>
+{{#if finalPrice}}
+<p>Precio con descuento: {{finalPrice}}</p>
+{{/if}}
